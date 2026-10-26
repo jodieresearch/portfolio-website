@@ -1,76 +1,185 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my website">
-    <title>My Homepage</title>
-
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Jodie Neville | Research & Insight</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>My Website is Here Again</h1>
+  <header class="site-header">
+    <a href="#" class="brand">Dr Jodie Neville</a>
 
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
+  <main>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <h2>Welcome to My Website</h2>
-            <p>A short introduction to what this website is about. Hello!</p>
-            <a href="#about">Learn More</a>
-        </section>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Research · Insight · Impact</p>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Write a brief description about yourself or your business.</p>
-        </section>
+        <h1>Thoughtful research.<br />Clearer ways forward.</h1>
 
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Our Services</h2>
+        <p class="hero-description">
+          I’m Dr Jodie Neville. I bring a research-led perspective to complex
+          questions, helping teams make sense of evidence and communicate what matters.
+        </p>
 
-            <article>
-                <h3>Service One</h3>
-                <p>Describe your first service here.</p>
-            </article>
+        <div class="hero-actions">
+          <a href="#services" class="button button-primary">
+            Explore services <span>↗</span>
+          </a>
 
-            <article>
-                <h3>Service Two</h3>
-                <p>Describe your second service here.</p>
-            </article>
-        </section>
+          <a href="#contact" class="button button-secondary">
+            Start a conversation
+          </a>
+        </div>
+      </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us.</p>
-            <a href="mailto:hello@example.com">Send an Email</a>
-        </section>
+      <div class="hero-image-wrap">
+        <img
+          src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1280"
+          alt="Collaborative workspace with people reviewing ideas and materials"
+          class="hero-image"
+        />
+        <p class="image-caption">
+          Curiosity, rigour and a human perspective
+        </p>
+      </div>
+    </section>
 
-    </main>
+    <section class="about section" id="about">
+      <div class="section-label">About</div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
-    </footer>
+      <div class="about-content">
+        <div>
+          <p class="eyebrow">A considered approach</p>
+          <h2>An enquiring mind, applied with purpose.</h2>
+        </div>
+
+        <div>
+          <p class="about-lead">
+            Good research does more than gather information. It creates
+            understanding that people can use.
+          </p>
+
+          <p>
+            My work centres on asking useful questions, engaging carefully with
+            evidence and shaping findings into clear, practical insights.
+            Whether a project is just beginning or ready to be shared, I can
+            help bring focus to the next step.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">What I can help with</p>
+          <h2>Research support, shaped around your needs.</h2>
+        </div>
+
+        <p>
+          Flexible freelance support for organisations, teams and individuals
+          working with ideas and evidence.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <p class="service-number">01 / Discover</p>
+          <h3>Research strategy</h3>
+          <p>
+            Clarify the question, define a useful scope and plan a thoughtful
+            route from inquiry to insight.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <p class="service-number">02 / Understand</p>
+          <h3>Evidence synthesis</h3>
+          <p>
+            Bring together sources, identify patterns and turn complex material
+            into a coherent picture.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <p class="service-number">03 / Communicate</p>
+          <h3>Writing & communication</h3>
+          <p>
+            Translate research into accessible writing and compelling messages
+            for the people who need them.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="approach section" id="approach">
+      <div class="section-label">My approach</div>
+
+      <div class="approach-intro">
+        <h2>From a good question to a useful answer.</h2>
+      </div>
+
+      <div class="approach-grid">
+        <article class="approach-step">
+          <span class="step-number">01</span>
+          <h3>Listen first</h3>
+          <p>
+            We establish what you need to know, who the work is for and what a
+            useful outcome looks like.
+          </p>
+        </article>
+
+        <article class="approach-step">
+          <span class="step-number">02</span>
+          <h3>Explore carefully</h3>
+          <p>
+            I work through the available evidence with curiosity, care and
+            attention to context.
+          </p>
+        </article>
+
+        <article class="approach-step">
+          <span class="step-number">03</span>
+          <h3>Make it meaningful</h3>
+          <p>
+            Findings become clear, considered outputs that support decisions
+            and move conversations forward.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">Let’s connect</p>
+
+      <h2>Have a question worth exploring?</h2>
+
+      <p>
+        Tell me a little about your project, your questions and the support
+        you’re looking for. I’d be glad to hear from you.
+      </p>
+
+      <a href="mailto:jodie.research@gmail.com" class="button button-light">
+        Enquire by email <span>↗</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© Dr Jodie Neville</p>
+  </footer>
 
 </body>
 </html>
