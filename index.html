@@ -1,76 +1,217 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my website">
-    <title>My Homepage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Jodie Neville | Research & Insight</title>
+  <link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/png" href="/favicon.jpeg">
 
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>My Website is Here Again</h1>
+  <header class="site-header">
+    <a href="#" class="brand">Dr Jodie Neville</a>
 
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#portfolio">Selected work</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
+  <main>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <h2>Welcome to My Website</h2>
-            <p>A short introduction to what this website is about. Hello!</p>
-            <a href="#about">Learn More</a>
-        </section>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Research · Insight · Impact</p>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Write a brief description about yourself or your business.</p>
-        </section>
+        <h1>Thorough research.<br />Valuable outcomes.</h1>
 
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Our Services</h2>
+        <p class="hero-description">
+          I’m Dr Jodie Neville, and I work across a range of research-led projects, from archives and heritage to business consultancy, creative work and family history. I enjoy getting to the heart of a question, uncovering things that might otherwise be missed, and helping people work out what to do next. Every project is different, and I bring a thoughtful, practical approach to each one. If you have something in mind, I’d love to hear about it. 
+        </p>
 
-            <article>
-                <h3>Service One</h3>
-                <p>Describe your first service here.</p>
-            </article>
+        <div class="hero-actions">
+          <a href="#services" class="button button-primary">
+            Explore services <span>↗</span>
+          </a>
 
-            <article>
-                <h3>Service Two</h3>
-                <p>Describe your second service here.</p>
-            </article>
-        </section>
+          <a href="#contact" class="button button-secondary">
+            Start a conversation
+          </a>
+        </div>
+      </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us.</p>
-            <a href="mailto:hello@example.com">Send an Email</a>
-        </section>
+      <div class="hero-image-wrap">
+        <img
+          src="Professional-Portrait.png"
+          alt="Collaborative workspace with people reviewing ideas and materials"
+          class="hero-image"
+        />
+   
+      </div>
+    </section>
 
-    </main>
+    <section class="about section" id="about">
+      <div class="section-label">About</div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
-    </footer>
+      <div class="about-content">
+        <div>
+          <p class="eyebrow">A little about my work</p>
+          <h2>Following my curiosity.</h2>
+        </div>
+
+        <div>
+          <p class="about-lead">
+            My PhD explored the history of women in football coaching, using oral history interviews alongside archival research to understand the barriers women faced and how they challenged them. 
+          </p>
+
+          <p>
+            Speaking to people about their experiences, as well as digging through historical records, gave me a different perspective on a history that has often been overlooked. Alongside my doctoral research, I developed Coaching Tales, an interactive digital experience for the National Football Museum, bringing these histories to a wider audience.
+            </p>
+            <p>
+            More recently, I’ve been researching independent alternative provision costs in Sandwell, helping a provider benchmark their spending. Although quite different from my historical work, the project draws on the same skills: investigating a question, working with evidence and making sense of information to help inform decisions.
+</p>
+<p>
+            My varied experience has given me a broad range of transferable skills that I can bring to your project, whatever the subject or challenge.
+          </p></p>
+        </div>
+      </div>
+    </section>
+
+
+<section class="services section" id="portfolio">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Selected work</p>
+      <h2>Research in practice.</h2>
+    </div>
+
+    <p>
+      A selection of projects spanning research, digital storytelling
+      and consultancy.
+    </p>
+  </div>
+
+  <div class="service-grid">
+
+    <!-- Project 1: Alternative provision -->
+    <a
+      href="portfolio/alternative.provision.html"
+      class="service-card-link"
+      aria-label="Read more about alternative provision cost benchmarking"
+    >
+      <article class="service-card">
+        <p class="service-number">01 / Research & consultancy</p>
+        <h3>Alternative provision cost benchmarking</h3>
+        <p>
+          Research into independent alternative provision in Sandwell,
+          helping a provider benchmark its costs and better understand
+          its spending.
+        </p>
+        <span class="card-link-text">Explore project →</span>
+      </article>
+    </a>
+
+    <!-- Project 2: Coaching Tales -->
+    <a
+      href="portfolio/coaching-tales.html"
+      class="service-card-link"
+      aria-label="Read more about Coaching Tales"
+    >
+      <article class="service-card">
+        <p class="service-number">02 / Digital storytelling</p>
+        <h3>Coaching Tales</h3>
+        <p>
+          An interactive digital experience developed alongside my PhD
+          to bring the overlooked histories of women in football coaching
+          to a wider audience.
+        </p>
+        <span class="card-link-text">Explore project →</span>
+      </article>
+    </a>
+
+    <!-- Project 3: Women's football coaching -->
+    <a
+      href="portfolio/womens-football-coaching.html"
+      class="service-card-link"
+      aria-label="Read more about my research into women in football coaching"
+    >
+      <article class="service-card">
+        <p class="service-number">03 / Historical research</p>
+        <h3>Women in football coaching</h3>
+        <p>
+          My doctoral research used oral history interviews and archival
+          sources to explore the barriers women faced in football coaching
+          and how they challenged them.
+        </p>
+        <span class="card-link-text">Explore project →</span>
+      </article>
+    </a>
+
+  </div>
+</section>
+
+
+    <section class="approach section" id="approach">
+      <div class="section-label">My approach</div>
+
+      <div class="approach-intro">
+        <h2>From a good question to a useful answer.</h2>
+      </div>
+
+      <div class="approach-grid">
+        <article class="approach-step">
+          <span class="step-number">01</span>
+          <h3>Listen first</h3>
+          <p>
+            We establish what you need to know, who the work is for and what a
+            useful outcome looks like.
+          </p>
+        </article>
+
+        <article class="approach-step">
+          <span class="step-number">02</span>
+          <h3>Explore carefully</h3>
+          <p>
+            I work through the available evidence with curiosity, care and
+            attention to context.
+          </p>
+        </article>
+
+        <article class="approach-step">
+          <span class="step-number">03</span>
+          <h3>Make it meaningful</h3>
+          <p>
+            Findings become clear, considered outputs that support decisions
+            and move conversations forward.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">Let’s connect</p>
+
+      <h2>Have a question worth exploring?</h2>
+
+      <p>
+        Tell me a little about your project, your questions and the support
+        you’re looking for. I’d be glad to hear from you.
+      </p>
+
+      <a href="mailto:jodie.research@gmail.com" class="button button-light">
+        Enquire by email <span>↗</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© Dr Jodie Neville</p>
+  </footer>
 
 </body>
 </html>
