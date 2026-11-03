@@ -1,0 +1,592 @@
+
+/* =========================================
+   FAMILY HISTORY SERVICE PAGE
+   ========================================= */
+
+:root {
+  --family-background: #f6f2eb;
+  --family-surface: #fffdf9;
+  --family-text: #292923;
+  --family-muted: #6d6a61;
+  --family-accent: #8b6e50;
+  --family-accent-light: #e9dfd2;
+  --family-border: #d9d0c4;
+
+  --family-content-width: 1100px;
+  --family-radius: 4px;
+}
+
+
+/* General page */
+
+.family-page {
+  background: var(--family-background);
+  color: var(--family-text);
+}
+
+.family-page p {
+  line-height: 1.75;
+}
+
+.family-page h1,
+.family-page h2,
+.family-page h3,
+.family-page h4 {
+  color: var(--family-text);
+  line-height: 1.2;
+}
+
+.family-page h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin: 0 0 1.25rem;
+}
+
+.family-page h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  margin: 0 0 1.5rem;
+}
+
+.family-page h3 {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.family-page h4 {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.8rem;
+}
+
+.family-eyebrow {
+  color: var(--family-accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.family-page a {
+  color: inherit;
+}
+
+
+/* Hero */
+
+.family-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+
+  max-width: var(--family-content-width);
+  margin: 0 auto;
+  padding: clamp(4rem, 8vw, 7rem) 2rem;
+}
+
+.family-hero-text {
+  max-width: 600px;
+}
+
+.family-hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.family-hero-image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--family-accent-light);
+}
+
+.family-hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.family-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.5rem;
+
+  background: var(--family-text);
+  color: var(--family-surface) !important;
+  border: 1px solid var(--family-text);
+  border-radius: var(--family-radius);
+
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.family-button:hover {
+  background: transparent;
+  color: var(--family-text) !important;
+}
+
+
+/* Shared section layout */
+
+.section-divider {
+  border-top: 1px solid var(--family-border);
+}
+
+.family-intro,
+.family-packages,
+.family-records,
+.family-process,
+.family-faq {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+
+  max-width: var(--family-content-width);
+  margin: 0 auto;
+  padding: clamp(3.5rem, 7vw, 6rem) 2rem;
+}
+
+.family-section-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.family-section-label span {
+  color: var(--family-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.family-section-label p {
+  margin: 0;
+  color: var(--family-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.family-section-content {
+  min-width: 0;
+  max-width: 850px;
+}
+
+.family-section-content > p {
+  max-width: 750px;
+}
+
+.family-section-heading {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+
+/* Pricing cards */
+
+.family-package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.family-package {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+
+  padding: 1.5rem;
+  background: var(--family-surface);
+  border: 1px solid var(--family-border);
+  border-radius: var(--family-radius);
+}
+
+.family-package-featured {
+  border-color: var(--family-accent);
+  box-shadow: 0 5px 20px rgba(41, 41, 35, 0.05);
+}
+
+.family-package-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--family-border);
+}
+
+.family-package-level {
+  color: var(--family-accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.9rem;
+  text-transform: uppercase;
+}
+
+.family-package-header h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.family-price {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0.75rem 0;
+}
+
+.family-price-tailored {
+  font-size: 1.65rem;
+  letter-spacing: -0.02em;
+}
+
+.family-package-summary {
+  color: var(--family-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.family-package-details {
+  flex: 1;
+}
+
+.family-detail {
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--family-border);
+}
+
+.family-detail h4 {
+  color: var(--family-accent);
+}
+
+.family-detail p {
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem;
+}
+
+.family-detail p:last-child {
+  margin-bottom: 0;
+}
+
+.family-package-best {
+  background: var(--family-background);
+  padding: 1rem;
+  margin: 1.25rem 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.family-package-best strong {
+  color: var(--family-text);
+}
+
+.family-package-link {
+  display: block;
+  margin-top: auto;
+  padding: 0.85rem 1rem;
+
+  border: 1px solid var(--family-text);
+  border-radius: var(--family-radius);
+
+  font-size: 0.85rem;
+  text-align: center;
+  text-decoration: none;
+
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.family-package-link:hover {
+  background: var(--family-text);
+  color: var(--family-surface);
+}
+
+.family-package-note {
+  color: var(--family-muted);
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+
+/* Records grid */
+
+.family-record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.family-record {
+  padding: 1.5rem;
+  background: var(--family-surface);
+  border: 1px solid var(--family-border);
+  border-radius: var(--family-radius);
+}
+
+.family-record-number {
+  display: block;
+  color: var(--family-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.family-record h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.65rem;
+}
+
+.family-record p {
+  color: var(--family-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.family-records-note {
+  color: var(--family-muted);
+  font-size: 0.9rem;
+}
+
+
+/* Process */
+
+.family-process {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+
+  max-width: var(--family-content-width);
+  margin: 0 auto;
+  padding: clamp(3.5rem, 7vw, 6rem) 2rem;
+}
+
+.family-process-list {
+  border-top: 1px solid var(--family-border);
+}
+
+.family-process-step {
+  display: grid;
+  grid-template-columns: 55px minmax(0, 1fr);
+  gap: 1.25rem;
+
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--family-border);
+}
+
+.family-process-number {
+  color: var(--family-accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.family-process-step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.family-process-step p {
+  color: var(--family-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+
+/* FAQ accordion */
+
+.family-faq-list {
+  border-top: 1px solid var(--family-border);
+}
+
+.family-faq-item {
+  border-bottom: 1px solid var(--family-border);
+}
+
+.family-faq-item summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+
+  padding: 1.35rem 2.5rem 1.35rem 0;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.family-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.family-faq-item summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+  color: var(--family-accent);
+
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.family-faq-item[open] summary::after {
+  content: "−";
+}
+
+.family-faq-answer {
+  max-width: 750px;
+  padding: 0 1.5rem 1.25rem 0;
+}
+
+.family-faq-answer p {
+  color: var(--family-muted);
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+}
+
+.family-faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Contact section */
+
+.family-contact {
+  padding: clamp(4rem, 8vw, 7rem) 2rem;
+  text-align: center;
+
+  background: var(--family-accent-light);
+}
+
+.family-contact h2 {
+  max-width: 700px;
+  margin: 0 auto 1.25rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.family-contact > p:not(.family-eyebrow) {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+.family-contact .family-button {
+  margin-top: 2rem;
+}
+
+
+/* Footer */
+
+.family-page + .site-footer {
+  background: var(--family-background);
+  color: var(--family-muted);
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+  .family-hero {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 2rem;
+  }
+
+  .family-intro,
+  .family-packages,
+  .family-records,
+  .family-process,
+  .family-faq {
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .family-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .family-package {
+    padding: 1.75rem;
+  }
+
+  .family-package-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    align-items: start;
+  }
+
+  .family-package-level {
+    grid-column: 1 / -1;
+  }
+
+  .family-package-header h3 {
+    grid-column: 1;
+  }
+
+  .family-price {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+  }
+
+  .family-package-summary {
+    grid-column: 1 / -1;
+    margin-top: 0.75rem;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .family-hero {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.25rem;
+  }
+
+  .family-hero-image {
+    aspect-ratio: 5 / 3;
+  }
+
+  .family-intro,
+  .family-packages,
+  .family-records,
+  .family-process,
+  .family-faq {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 3rem 1.25rem;
+  }
+
+  .family-section-label {
+    margin-bottom: 0.25rem;
+  }
+
+  .family-record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .family-process-step {
+    grid-template-columns: 35px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .family-package-header {
+    display: block;
+  }
+
+  .family-price {
+    margin: 0.75rem 0;
+  }
+
+  .family-package-summary {
+    margin-top: 0.5rem;
+  }
+
+  .family-contact {
+    padding: 3.5rem 1.25rem;
+  }
+}
